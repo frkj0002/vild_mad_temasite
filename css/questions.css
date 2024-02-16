@@ -1,0 +1,70 @@
+/* Farver og fonte */
+:root {
+    --backgroundColor: #FFFCF0; 
+    --lysGrøn: #DBE8BD;
+    --mørkGrøn: #2B3E1E; 
+    --rødBrun: #945E5CB3; 
+}
+
+@font-face {
+    font-family: 'Montaga';
+    src: url(../fonts/Montaga-Regular.woff2);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.headerFill {
+    background-color: var(--lysGrøn);
+    height: 100px;
+}
+
+h1 {
+    font-family: 'Montaga';
+    font-size: 60px;
+    color: var(--mørkGrøn);
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    font-family: 'Montaga';
+    font-size: 34px;
+    color: var(--mørkGrøn);
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.answerBox {
+    background-color: var(--mørkGrøn);
+    color: var(--backgroundColor);
+    font-family: 'Montaga';
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 45px;
+    border-radius: 10px;
+}
