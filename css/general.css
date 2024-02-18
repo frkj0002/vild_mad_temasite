@@ -28,6 +28,107 @@ button {
   font-family: "Montaga", serif;
 }
 /**************************************** HEADER ****************************************/
+header {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--lysgrøn);
+  position: sticky;
+}
+header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.menu a {
+  font-family: "Montaga", serif;
+  font-weight: 600;
+  color: var(--mørkgrøn);
+  background-color: var(--lysgul);
+  margin-right: 60px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 6px;
+}
+.logo_header a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo_header img {
+  width: 30%;
+}
+.logo_header p {
+  font-family: "Montaga", serif;
+  color: var(--mørkgrøn);
+}
+
+/****** BURGERMENU ******/
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--mørkgrøn);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+  nav.active .menu {
+    display: block;
+    background-color: var(--lysgrøn);
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  nav.active .menu li {
+    margin-left: 20px;
+    margin-top: 8px;
+    padding-top: 10px;
+  }
+}
 
 /**************************************** FOOTER ****************************************/
 /****** DESKTOP ******/
