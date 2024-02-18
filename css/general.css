@@ -15,6 +15,14 @@ body {
 }
 
 /**************************************** TEKST ****************************************/
+h1 {
+  font-family: "Montaga", serif;
+  color: var(--mørkgrøn);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+}
+
 h3 {
   font-size: 18px;
   margin: 0;
@@ -93,7 +101,6 @@ nav li {
   margin: 0;
   padding: 0;
 }
-
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
