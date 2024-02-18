@@ -1,7 +1,120 @@
+/**************************************** VARIABLER ****************************************/
+html {
+  --lysgul: #fffcf0;
+  --lysgrøn: #dbe8bd;
+  --mørkgrøn: #2b3e1e;
+}
+
 /**************************************** RESET ****************************************/
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0 auto;
+  background-color: var(--lysgul);
 }
+
+/**************************************** TEKST ****************************************/
+h3 {
+  font-size: 18px;
+  margin: 0;
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  color: var(--mørkgrøn);
+}
+label,
+button {
+  color: var(--mørkgrøn);
+  font-family: "Montaga", serif;
+}
+/**************************************** HEADER ****************************************/
+
+/**************************************** FOOTER ****************************************/
+/****** DESKTOP ******/
+@media (min-width: 800px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .logo_div {
+    width: 40%;
+    margin-left: 90px;
+  }
+  .logo_div p {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  .social_media {
+    margin-right: 62px;
+  }
+  .social_media img {
+    padding-bottom: 44px;
+  }
+}
+
+footer {
+  background-color: var(--lysgrøn);
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+/****** FORM ******/
+input,
+select {
+  margin-top: 8px;
+}
+select {
+  color: #575757;
+  cursor: pointer;
+}
+.flex_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 25px 0 25px;
+  padding: 30px 0 20px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input,
+select,
+button {
+  background-color: var(--lysgul);
+  border: 0;
+  padding: 7px 5px 7px 5px;
+  border-radius: 6px;
+}
+
+.logo_div img {
+  width: 50%;
+}
+.logo_div p {
+  font-family: "Montaga", serif;
+  color: var(--mørkgrøn);
+}
+.logo_div {
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+.instagram {
+  width: 33%;
+}
+.facebook {
+  width: 30%;
+}
+.social_media {
+  display: flex;
+  place-items: end;
+  padding-bottom: 19px;
+  gap: 15px;
+}
+
+/**************************************** DESKTOP ****************************************/

@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>Questions</title>
 
-    <link rel="icon" href="" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/questions.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Questions</title>
 
-  <body>
-    <script src="js/questions.js"></script>
-  </body>
+  <link rel="icon" href="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/questions.css" />
+</head>
+
+<body>
+  <footer>
+    <section class="flex_form">
+      <div>
+        <h3>Did you find any herbs?</h3>
+        <h3>Tell us about it down below.</h3>
+      </div>
+      <form action="tak.html" name="form" netlify>
+        <!-- Formular-indhold -->
+        <div class="flex_row">
+          <div class="form-felt">
+            <label for="name">Your name:</label><br />
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-felt">
+            <label for="age">Your age:</label><br />
+            <input id="age" name="age" type="text" required />
+          </div>
+        </div>
+        <div class="form-felt">
+          <label for="name_herb">What's the name of the herb you found?</label><br />
+          <input id="name_herb" name="name_herb" type="text" required />
+        </div>
+        <div class="choose">
+          <label for="locations">Where did you find the herb?</label><br />
+          <select name="locations">
+            <option value="">Choose a location</option>
+            <option value="city">City</option>
+            <option value="forest">Forest</option>
+            <option value="beach">Beach</option>
+            <option value="fields">Fields</option>
+          </select>
+        </div>
+        <div class="choose">
+          <label for="locations">What are you using it for?</label><br />
+          <select name="locations">
+            <option value="">Choose an option</option>
+            <option value="cooking">For cooking</option>
+            <option value="decoration">For decoration</option>
+            <option value="herb_collection">For my herb collection</option>
+            <option value="not_sure">I'm not sure?</option>
+          </select>
+        </div>
+
+        <button>Submit answers</button>
+      </form>
+    </section>
+    <section class="flex_row">
+      <div class="logo_div">
+        <img src="imgs/illustrations/logo.svg" alt="logo">
+        <p>VILD MAD</p>
+      </div>
+      <div class="social_media">
+        <img src="imgs/illustrations/instagram.svg" alt="instagram" class="instagram">
+        <img src="imgs/illustrations/facebook.svg" alt="facebook" class="facebook">
+      </div>
+    </section>
+  </footer>
+  <script src="js/questions.js"></script>
+</body>
+
 </html>
