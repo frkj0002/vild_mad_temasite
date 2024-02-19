@@ -11,6 +11,7 @@
     src: url(../fonts/Montaga-Regular.woff2);
 }
 
+/* Generel styling */
 
 * {
     box-sizing: border-box;
@@ -60,14 +61,15 @@ a {
     text-decoration: none;
 }
 
-#firstQuestion {
+/* Questions */
+
+.questionsVh {
     height: 100vh;
 }
-#secondQuestion {
-    height: 100vh;
-}
-#thirdQuestion {
-    height: 100vh;
+#secondQuestion, #thirdQuestion, #seeResult {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
 }
 
 .answers {
@@ -87,16 +89,10 @@ a {
     padding: 20px 45px;
     border-radius: 10px;
 }
-.answerBox:hover {
+.answerBox:hover, .resultBtn:hover {
     transform: scale(1.03);
     transition: .2s;
     cursor: pointer;
-}
-.answerBox:active {
-    background-attachment: red;
-}
-.chosen {
-    background-color: var(--rødBrun);
 }
 
 #thirdQuestion .answers a:nth-child(1) {
@@ -110,4 +106,16 @@ a {
 }
 #thirdQuestion .answers a:nth-child(4) {
     color: #D089F2;
+}
+
+.resultBtn {
+    margin: auto;
+    margin-top: 50px
+}
+.resultBtn .answerBox {
+    font-size: 22px;
+}
+
+.chosen {
+    background-color: var(--rødBrun);
 }
