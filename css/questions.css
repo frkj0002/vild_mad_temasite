@@ -3,7 +3,7 @@ html {
     --lysgrøn: #dbe8bd;
     --mørkgrøn: #2b3e1e;
     --rødBrun: #945E5CB3; 
-  }
+}
 
 /* Generel styling */
 
@@ -12,7 +12,6 @@ html {
 }
 
 body {
-    background-color: var(--lysgul);
     min-height: 100vh;
 }
 
