@@ -3,11 +3,13 @@ html {
   --lysgul: #fffcf0;
   --lysgrøn: #dbe8bd;
   --mørkgrøn: #2b3e1e;
+  --rødBrun: #945E5CB3; 
 }
 
 /**************************************** RESET ****************************************/
 * {
   box-sizing: border-box;
+  line-height: 1.5;
 }
 body {
   margin: 0 auto;
