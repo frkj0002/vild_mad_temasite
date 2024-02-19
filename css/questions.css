@@ -33,6 +33,8 @@ h1 {
 
 h2 {
     font-size: 40px;
+    font-family: "Montaga", serif;
+    color: var(--mørkgrøn);
     text-align: center;
     margin-top: 50px;
     font-weight: unset;
@@ -40,6 +42,8 @@ h2 {
 
 a {
     text-decoration: none;
+    font-family: "Montaga", serif;
+    color: var(--mørkgrøn);
 }
 
 /* Questions */
@@ -76,7 +80,7 @@ a {
 }
 
 #thirdQuestion .answers a:nth-child(1) {
-    color: #9ED6FF;
+    color: #fff;
 }
 #thirdQuestion .answers a:nth-child(2) {
     color: #FDFF9F;
@@ -91,7 +95,7 @@ a {
 #resultBtn {
     margin: auto;
     width: fit-content;
-    margin-top: 200px
+    margin-top: 200px;
 }
 #resultBtn .answerBox {
     font-size: 22px;
@@ -101,3 +105,4 @@ a {
 .chosen {
     background-color: var(--rødBrun);
 }
+
