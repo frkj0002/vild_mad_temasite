@@ -1,7 +1,228 @@
+/**************************************** VARIABLER ****************************************/
+html {
+  --lysgul: #fffcf0;
+  --lysgrøn: #dbe8bd;
+  --mørkgrøn: #2b3e1e;
+}
+
 /**************************************** RESET ****************************************/
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0 auto;
+  background-color: var(--lysgul);
 }
+
+/**************************************** TEKST ****************************************/
+h1 {
+  font-family: "Montaga", serif;
+  color: var(--mørkgrøn);
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0;
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  color: var(--mørkgrøn);
+}
+label,
+button {
+  color: var(--mørkgrøn);
+  font-family: "Montaga", serif;
+}
+/**************************************** HEADER ****************************************/
+header {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--lysgrøn);
+  position: sticky;
+}
+header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.menu a {
+  font-family: "Montaga", serif;
+  font-weight: 600;
+  color: var(--mørkgrøn);
+  background-color: var(--lysgul);
+  margin-right: 60px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 6px;
+}
+.logo_header a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo_header img {
+  width: 30%;
+}
+.logo_header p {
+  font-family: "Montaga", serif;
+  color: var(--mørkgrøn);
+}
+
+/****** BURGERMENU ******/
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--mørkgrøn);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+nav li {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+  nav.active .menu {
+    display: block;
+    background-color: var(--lysgrøn);
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  nav.active .menu li {
+    margin-left: 20px;
+    margin-top: 8px;
+    padding-top: 10px;
+  }
+}
+
+/**************************************** FOOTER ****************************************/
+/****** DESKTOP ******/
+@media (min-width: 800px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .logo_div {
+    width: 40%;
+    margin-left: 90px;
+  }
+  .logo_div p {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  .social_media {
+    margin-right: 62px;
+  }
+  .social_media img {
+    padding-bottom: 44px;
+  }
+}
+
+footer {
+  background-color: var(--lysgrøn);
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+/****** FORM ******/
+input,
+select {
+  margin-top: 8px;
+}
+select {
+  color: #575757;
+  cursor: pointer;
+}
+.flex_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 25px 0 25px;
+  padding: 30px 0 20px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input,
+select,
+button {
+  background-color: var(--lysgul);
+  border: 0;
+  padding: 7px 5px 7px 5px;
+  border-radius: 6px;
+}
+
+.logo_div img {
+  width: 50%;
+}
+.logo_div p {
+  font-family: "Montaga", serif;
+  color: var(--mørkgrøn);
+}
+.logo_div {
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+.instagram {
+  width: 33%;
+}
+.facebook {
+  width: 30%;
+}
+.social_media {
+  display: flex;
+  place-items: end;
+  padding-bottom: 19px;
+  gap: 15px;
+}
+
+/**************************************** DESKTOP ****************************************/
