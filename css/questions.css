@@ -1,31 +1,18 @@
-/* Farver og fonte */
-:root {
-    --backgroundColor: #FFFCF0; 
-    --lysGrøn: #DBE8BD;
-    --mørkGrøn: #2B3E1E; 
+html {
+    --lysgul: #fffcf0;
+    --lysgrøn: #dbe8bd;
+    --mørkgrøn: #2b3e1e;
     --rødBrun: #945E5CB3; 
-}
-
-@font-face {
-    font-family: 'Montaga';
-    src: url(../fonts/Montaga-Regular.woff2);
-}
+  }
 
 /* Generel styling */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-}
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--backgroundColor);
+    background-color: var(--lysgul);
     min-height: 100vh;
 }
 
@@ -34,27 +21,21 @@ img {
 }
 
 .headerFill {
-    background-color: var(--lysGrøn);
+    background-color: var(--lysgrøn);
     height: 100px;
     position: sticky;
     top: 0;
 }
 
 h1 {
-    font-family: 'Montaga';
-    font-size: 70px;
-    color: var(--mørkGrøn);
-    text-align: center;
     margin-top: 30px;
 }
 
 h2 {
-    font-family: 'Montaga';
     font-size: 40px;
-    color: var(--mørkGrøn);
     text-align: center;
     margin-top: 50px;
-
+    font-weight: unset;
 }
 
 a {
@@ -81,9 +62,8 @@ a {
     margin-top: 50px;
 }
 .answerBox {
-    background-color: var(--mørkGrøn);
-    color: var(--backgroundColor);
-    font-family: 'Montaga';
+    background-color: var(--mørkgrøn);
+    color: var(--lysgul);
     font-size: 20px;
     text-align: center;
     padding: 20px 45px;
