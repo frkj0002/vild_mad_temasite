@@ -66,7 +66,7 @@ a {
 .questionsVh {
     height: 100vh;
 }
-#secondQuestion, #thirdQuestion, #seeResult {
+#secondQuestion, #thirdQuestion {
     display: flex;
     flex-direction: column;
     padding-top: 100px;
@@ -89,7 +89,7 @@ a {
     padding: 20px 45px;
     border-radius: 10px;
 }
-.answerBox:hover, .resultBtn:hover {
+.answerBox:hover, #resultBtn:hover {
     transform: scale(1.03);
     transition: .2s;
     cursor: pointer;
@@ -108,12 +108,14 @@ a {
     color: #D089F2;
 }
 
-.resultBtn {
+#resultBtn {
     margin: auto;
-    margin-top: 50px
+    width: fit-content;
+    margin-top: 200px
 }
-.resultBtn .answerBox {
+#resultBtn .answerBox {
     font-size: 22px;
+    background-color: var(--rødBrun);
 }
 
 .chosen {
