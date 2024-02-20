@@ -1,102 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Questions</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
-  <title>Questions</title>
+    <link rel="icon" href="" />
 
-  <link rel="icon" href="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montaga&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/questions.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/questions.css" />
-</head>
-
-<body>
-  <header>
-    <div class="logo_header">
-      <a href="frontpage.html">
-        <img src="imgs/illustrations/logo.svg" alt="logo">
-        <p>VILD MAD</p>
-      </a>
-    </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="questions.html">Locate herbs</a></li>
-        <li><a href="list.html">All herbs</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+  <body>
+    <header>
+      <div class="logo_header">
+        <a href="frontpage.html">
+          <img src="imgs/illustrations/logo.svg" alt="logo" />
+          <p>VILD MAD</p>
+        </a>
       </div>
-    </nav>
-  </header>
+      <nav>
+        <ul class="menu">
+          <li><a href="questions.html">Locate herbs</a></li>
+          <li><a href="list.html">All herbs</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
 
+    <main>
+      <h1>Locate herbs</h1>
+      <section class="questionsVh">
+        <div id="firstQuestion">
+          <h2>What season are we currently in?</h2>
+          <div class="answers">
+            <a href="#secondQuestion" class="answerBtn">
+              <img
+                src="imgs/illustrations/SPRING.svg"
+                alt="Illustration of a herb"
+              />
+              <p class="answerBox" id="seasonSpring">Spring</p>
+            </a>
+            <a href="#secondQuestion" class="answerBtn">
+              <img
+                src="imgs/illustrations/SPRING.svg"
+                alt="Illustration of a herb"
+              />
+              <p class="answerBox">Summer</p>
+            </a>
+            <a href="#secondQuestion" class="answerBtn">
+              <img
+                src="imgs/illustrations/SPRING.svg"
+                alt="Illustration of a herb"
+              />
+              <p class="answerBox">Fall</p>
+            </a>
+            <a href="#secondQuestion" class="answerBtn">
+              <img
+                src="imgs/illustrations/SPRING.svg"
+                alt="Illustration of a herb"
+              />
+              <p class="answerBox">Winter</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="questionsVh">
+        <div id="secondQuestion">
+          <h2>What area are your nearest located?</h2>
+          <div class="answers">
+            <a href="#thirdQuestion" class="answerBtn">
+              <img
+                src="imgs/illustrations/SPRING.svg"
+                alt="Illustration of a herb"
+              />
+              <p class="answerBox" id="seasonSpring">Beach</p>
+            </a>
+            <a href="#thirdQuestion" class="answerBtn">
+              <img
+                src="imgs/illustrations/SPRING.svg"
+                alt="Illustration of a herb"
+              />
+              <p class="answerBox">Forest</p>
+            </a>
+            <a href="#thirdQuestion" class="answerBtn">
+              <img
+                src="imgs/illustrations/SPRING.svg"
+                alt="Illustration of a herb"
+              />
+              <p class="answerBox">City</p>
+            </a>
+            <a href="#thirdQuestion" class="answerBtn">
+              <img
+                src="imgs/illustrations/SPRING.svg"
+                alt="Illustration of a herb"
+              />
+              <p class="answerBox">Fields</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="questionsVh">
+        <div id="thirdQuestion">
+          <h2>What color do you like the most?</h2>
+          <div class="answers">
+            <a href="#thirdQuestion" class="answerBtn">
+              <p class="answerBox" id="seasonSpring">White</p>
+            </a>
+            <a href="#thirdQuestion" class="answerBtn">
+              <p class="answerBox">Yellow</p>
+            </a>
+            <a href="#thirdQuestion" class="answerBtn">
+              <p class="answerBox">Green</p>
+            </a>
+            <a href="#thirdQuestion" class="answerBtn">
+              <p class="answerBox">Purple</p>
+            </a>
+          </div>
+        </div>
+        <div class="resultBtn">
+          <a href="#thirdQuestion" class="answerBtn"
+            >Confirm, and show me the herbs!</a
+          >
+        </div>
+      </section>
+    </main>
 
-  <footer>
-    <section class="flex_form">
-      <div>
-        <h3>Did you find any herbs?</h3>
-        <h3>Tell us about it down below.</h3>
-      </div>
-      <form action="tak.html" name="form" netlify>
-        <!-- Formular-indhold -->
-        <div class="flex_row">
-          <div class="form-felt">
-            <label for="name">Your name:</label><br />
-            <input id="name" name="name" type="text" required />
+    <footer>
+      <section class="flex_form">
+        <div>
+          <h3>Did you find any herbs?</h3>
+          <h3>Tell us about it down below.</h3>
+        </div>
+        <form action="tak.html" name="form" netlify>
+          <!-- Formular-indhold -->
+          <div class="flex_row">
+            <div class="form-felt">
+              <label for="name">Your name:</label><br />
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-felt">
+              <label for="age">Your age:</label><br />
+              <input id="age" name="age" type="text" required />
+            </div>
           </div>
           <div class="form-felt">
-            <label for="age">Your age:</label><br />
-            <input id="age" name="age" type="text" required />
+            <label for="name_herb">What's the name of the herb you found?</label
+            ><br />
+            <input id="name_herb" name="name_herb" type="text" required />
           </div>
-        </div>
-        <div class="form-felt">
-          <label for="name_herb">What's the name of the herb you found?</label><br />
-          <input id="name_herb" name="name_herb" type="text" required />
-        </div>
-        <div class="choose">
-          <label for="locations">Where did you find the herb?</label><br />
-          <select name="locations">
-            <option value="">Choose a location</option>
-            <option value="city">City</option>
-            <option value="forest">Forest</option>
-            <option value="beach">Beach</option>
-            <option value="fields">Fields</option>
-          </select>
-        </div>
-        <div class="choose">
-          <label for="locations">What are you using it for?</label><br />
-          <select name="locations">
-            <option value="">Choose an option</option>
-            <option value="cooking">For cooking</option>
-            <option value="decoration">For decoration</option>
-            <option value="herb_collection">For my herb collection</option>
-            <option value="not_sure">I'm not sure?</option>
-          </select>
-        </div>
+          <div class="choose">
+            <label for="locations">Where did you find the herb?</label><br />
+            <select name="locations">
+              <option value="">Choose a location</option>
+              <option value="city">City</option>
+              <option value="forest">Forest</option>
+              <option value="beach">Beach</option>
+              <option value="fields">Fields</option>
+            </select>
+          </div>
+          <div class="choose">
+            <label for="locations">What are you using it for?</label><br />
+            <select name="locations">
+              <option value="">Choose an option</option>
+              <option value="cooking">For cooking</option>
+              <option value="decoration">For decoration</option>
+              <option value="herb_collection">For my herb collection</option>
+              <option value="not_sure">I'm not sure?</option>
+            </select>
+          </div>
 
-        <button>Submit answers</button>
-      </form>
-    </section>
-    <section class="flex_row">
-      <div class="logo_div">
-        <img src="imgs/illustrations/logo.svg" alt="logo">
-        <p>VILD MAD</p>
-      </div>
-      <div class="social_media">
-        <img src="imgs/illustrations/instagram.svg" alt="instagram" class="instagram">
-        <img src="imgs/illustrations/facebook.svg" alt="facebook" class="facebook">
-      </div>
-    </section>
-  </footer>
+          <button>Submit answers</button>
+        </form>
+      </section>
+      <section class="flex_row">
+        <div class="logo_div">
+          <img src="imgs/illustrations/logo.svg" alt="logo" />
+          <p>VILD MAD</p>
+        </div>
+        <div class="social_media">
+          <img
+            src="imgs/illustrations/instagram.svg"
+            alt="instagram"
+            class="instagram"
+          />
+          <img
+            src="imgs/illustrations/facebook.svg"
+            alt="facebook"
+            class="facebook"
+          />
+        </div>
+      </section>
+    </footer>
 
-  <script src="js/burgermenu.js"></script>
-  <script src="js/questions.js"></script>
-</body>
-
+    <script src="js/burgermenu.js"></script>
+    <script src="js/questions.js"></script>
+  </body>
 </html>
