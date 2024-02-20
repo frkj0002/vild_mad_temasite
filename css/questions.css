@@ -84,6 +84,12 @@ a {
     width: 30%;
     z-index: 1;
 }
+#summerIllustration {
+    width: 40%;
+}
+#fallIllustration {
+    width: 38%;
+}
 .answerBtn p {
     z-index: 2;
 }
