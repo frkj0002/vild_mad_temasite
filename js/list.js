@@ -27,8 +27,9 @@ function showHerb(herb) {
   herbClone.querySelector(".herbCategory").textContent = herb.category;
   herbClone.querySelector("h2").textContent = herb.name;
   herbClone.querySelector(".seasons").textContent = herb.seasons;
-//   herbClone.querySelector("img").src = herb.image;
-//   herbClone.querySelector("img").src = `https://vuifwijcjpzjqqspgrxn.supabase.co/rest/v1/herbs/webp/640/${herb.image}.webp`;
+  //   herbClone.querySelector("img").src = herb.image;
+  herbClone.querySelector("img").src = herb.image;
+
 
   // Man går til den rigtige produktoversigt, når man klikker på et produkt på produktlisten.
   herbClone.querySelector("a").href = `herb.html?id=${herb.id}`
