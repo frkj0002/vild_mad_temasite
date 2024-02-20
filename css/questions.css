@@ -75,7 +75,6 @@ a {
     padding: 3px 45px;
     border-radius: 10px;
     z-index: 0;
-    height: fit-content;
 }
 .answerBtn img {
     position: absolute;
@@ -83,13 +82,38 @@ a {
     left: 4px;
     width: 30%;
     z-index: 1;
+    opacity: 50%;
 }
 #summerIllustration {
     width: 40%;
+    left: 50%;
 }
 #fallIllustration {
     width: 38%;
+    left: unset;
+    right: 4px;
 }
+#winterIllustration {
+    width: 38%;
+    top: 3px;
+}
+
+#beachIllustration {
+    width: 60%;
+    left: unset;
+    right: 0;
+}
+#forestIllustration {
+    width: 70%;
+    left: 8%;
+}
+#cityIllustration {
+    width: 45%;
+}
+#fieldsIllustration {
+    width: 90%;
+}
+
 .answerBtn p {
     z-index: 2;
 }
