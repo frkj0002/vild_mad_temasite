@@ -1,18 +1,20 @@
 // Variabel, der indikerer hvilket nr. slide man er på
 var slideIndex = 0;
 
-// Kalder funktionen showslides, for at vise det første billede
+// Kalder funktionen showSlides, for at vise det første billede
 showSlides(slideIndex);
 
-// Funktion der skifter slide ved at tilføje (+)
+// Funktion der skifter slide ved at tilføje eller trække en fra slideIndex
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
+// Funktion der viser et bestemt slide (det nuværende slide) baseret på slideIndex
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
+// Funktion til at vise slides
 function showSlides(n) {
   const slides = document.getElementsByClassName("slide");
 
