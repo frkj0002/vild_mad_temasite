@@ -40,17 +40,4 @@ function showHerb(herb) {
 }
 
 
-{/* <a href="herb.html" class="herbCard">
-<img src="imgs/herbs/daisy.webp" alt="Daisy flower" />
-<div class="herbText">
-  <p class="lightP">Herbs and smaller plants</p>
-  <h2>Daisy</h2>
-  <div class="seasons">
-    <p class="lightP">Seasons</p>
-    <p>Spring, summer & fall</p>
-  </div>
-</div>
-</a> */}
-
-
 
