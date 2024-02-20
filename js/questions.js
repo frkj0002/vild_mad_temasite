@@ -12,9 +12,13 @@
 //     console.log("All herbs:", herbs);
 // }
 
+
+
+          
+
 const urlParams = new URLSearchParams(window.location.search);
 const colors = urlParams.get("colors");
-const herbsUrl = `https://vuifwijcjpzjqqspgrxn.supabase.co/rest/v1/herbs/${colors}?order=id.asc&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1aWZ3aWpjanB6anFxc3BncnhuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MDE2NTAsImV4cCI6MjAyMzQ3NzY1MH0.d0KA4WqvNlBMrmaDdam3yl6R7rhU8NevlOTM3BBzeYM`
+const herbsUrl = `https://vuifwijcjpzjqqspgrxn.supabase.co/rest/v1/herbs?&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1aWZ3aWpjanB6anFxc3BncnhuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MDE2NTAsImV4cCI6MjAyMzQ3NzY1MH0.d0KA4WqvNlBMrmaDdam3yl6R7rhU8NevlOTM3BBzeYM${colors}`
 
 // Fetcher dataen fra url'en
 fetch(herbsUrl)
@@ -22,7 +26,7 @@ fetch(herbsUrl)
     .then(showHerbs);
 
 function showHerbs(herbs) {
-    console.log("Herbs with purple", herbs);
+    console.log(herbs);
 }
 
 // Sæson variabler
