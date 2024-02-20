@@ -1,0 +1,46 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex_row {
+  display: flex;
+  gap: 30px;
+}
+
+.herb_image {
+  width: 70%;
+}
+
+.grid_seasons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/****** SLIDESHOW ******/
+.slideshow_container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+.slide {
+  display: none;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 1;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
