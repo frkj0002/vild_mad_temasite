@@ -37,6 +37,9 @@ button {
   color: var(--mørkgrøn);
   font-family: "Montaga", serif;
 }
+p {
+  max-width: 70ch;
+}
 /**************************************** HEADER ****************************************/
 header {
   z-index: 1000;
