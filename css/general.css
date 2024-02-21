@@ -78,7 +78,6 @@ nav {
   font-family: "Montaga", serif;
   font-weight: 600;
   color: var(--mørkgrøn);
-  background-color: var(--lysgul);
   margin-right: 60px;
   padding: 10px 30px 10px 30px;
   border-radius: 6px;
@@ -89,7 +88,7 @@ nav {
   gap: 16px;
 }
 .logo_header img {
-  width: 30%;
+  width: 24%;
 }
 .logo_header p {
   font-family: "Montaga", serif;

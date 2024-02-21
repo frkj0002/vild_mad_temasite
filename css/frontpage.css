@@ -15,8 +15,11 @@
 
 /* GENERAL*/
 header {
+  display: flex;
   background: none;
+  justify-content: right;
 }
+
 
 .styling {
     text-align: center;
