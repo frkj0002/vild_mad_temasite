@@ -37,6 +37,9 @@ button {
   color: var(--mørkgrøn);
   font-family: "Montaga", serif;
 }
+p {
+  max-width: 70ch;
+}
 /**************************************** HEADER ****************************************/
 header {
   z-index: 1000;
@@ -166,6 +169,7 @@ footer {
   background-color: var(--lysgrøn);
   padding-bottom: 60px;
   padding-top: 30px;
+  margin-top: 150px;
 }
 /****** FORM ******/
 input,

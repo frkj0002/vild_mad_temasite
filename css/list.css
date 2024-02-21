@@ -1,0 +1,87 @@
+html {
+    --lysgul: #fffcf0;
+    --lysgrøn: #dbe8bd;
+    --mørkgrøn: #2b3e1e;
+    --rødBrun: #945E5CB3; 
+}
+
+/* Generel styling */
+
+body {
+    background-color: var(--lysgul);
+}
+
+img {
+    max-width: 100%;
+}
+
+.headerFill {
+    background-color: var(--lysgrøn);
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+.marginTop {
+    margin-top: 100px;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "Montaga", serif;
+    color: var(--mørkgrøn);
+    text-align: center;
+    margin-top: 50px;
+    font-weight: unset;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Montaga", serif;
+    color: var(--mørkgrøn);
+}
+
+p {
+    font-size: 18px;
+    font-family: "Montaga", serif;
+    color: var(--mørkgrøn);
+}
+
+/* List view */
+
+.lightP {
+    color: #2B3E1ECC;
+}
+
+.allHerbs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.herbCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lysgrøn);
+    border-radius: 5px;
+}
+.herbCard:hover {
+    transform: scale(1.01);
+    transition: .5s;
+}
+.herbText {
+    padding: 20px 25px;
+}
+.herbText h2 {
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.herbText p {
+    margin: 0;
+}
