@@ -26,10 +26,10 @@ function showHerb(herb) {
   // Ændre indhold
   herbClone.querySelector(".herbCategory").textContent = herb.category;
   herbClone.querySelector("h2").textContent = herb.name;
-  herbClone.querySelector("#spring p").textContent = herb.spring;
-  herbClone.querySelector("#summer p").textContent = herb.summer;
-  herbClone.querySelector("#fall p").textContent = herb.fall;
-  herbClone.querySelector("#winter p").textContent = herb.winter;
+  herbClone.querySelector("#spring").textContent = herb.spring;
+  herbClone.querySelector("#summer").textContent = herb.summer;
+  herbClone.querySelector("#fall").textContent = herb.fall;
+  herbClone.querySelector("#winter").textContent = herb.winter;
   //   herbClone.querySelector("img").src = herb.image;
   herbClone.querySelector("img").src = herb.image;
 
