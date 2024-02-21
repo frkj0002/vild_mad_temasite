@@ -24,7 +24,13 @@ h1 {
   text-align: center;
   font-weight: 400;
 }
-
+h2 {
+  font-size: 30px;
+  margin: 0;
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  color: var(--mørkgrøn);
+}
 h3 {
   font-size: 18px;
   margin: 0;
