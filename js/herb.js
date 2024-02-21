@@ -19,84 +19,13 @@ function showSingleHerb(herb) {
   // Ændrer indholdet
   document.querySelector(".herb_name h1").textContent = singleProduct.name;
   document.querySelector(".herb_image").src = singleProduct.image;
+  document.querySelector("#spring").src = singleProduct.spring;
+  document.querySelector("#summer").src = singleProduct.summer;
+  document.querySelector("#fall").src = singleProduct.fall;
+  document.querySelector("#winter").src = singleProduct.winter;
   document.querySelector("#beach").src = singleProduct.beach;
   document.querySelector("#forest").src = singleProduct.forest;
   document.querySelector("#town").src = singleProduct.town;
   document.querySelector("#fields").src = singleProduct.fields;
 
-
-
- 
-
-
-  // if (herb.filter(herb => herb.seasons.includes('Summer'))) {
-  //   document.querySelector("#summer").classList.remove("hide");
-  // }
-  // if (herb.filter(herb => herb.seasons.includes('Fall'))) {
-  //   document.querySelector("#fall").classList.remove("hide");
-  // }
-
-
-  if (singleProduct.summer) {
-    document.querySelector("#summer").classList.remove("hide");
-  }
-  if (singleProduct.spring) {
-    document.querySelector("#spring").classList.remove("hide");
-  }
-  if (singleProduct.fall) {
-    document.querySelector("#fall").classList.remove("hide");
-  }
-  if (singleProduct.winter) {
-    document.querySelector("#winter").classList.remove("hide");
-  }
-
-  
-
-
-  
-
-}
-
-
-// SLIDESHOW
-
-// Variabel, der indikerer hvilket nr. slide man er på
-var slideIndex = 0;
-
-// Kalder funktionen showSlides, for at vise det første billede
-showSlides(slideIndex);
-
-// Funktion der skifter slide ved at tilføje eller trække en fra slideIndex
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-// Funktion der viser et bestemt slide (det nuværende slide) baseret på slideIndex
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-// Funktion til at vise slides
-function showSlides(n) {
-  const slides = document.getElementsByClassName("slide");
-
-  if (slides.length === 0) {
-    return; // Hvis der ikke er nogen billeder, afslut funktionen
-  }
-
-  if (n >= slides.length) {
-    slideIndex = 0; // Gå til første slide, hvis vi når slutningen
-  }
-
-  if (n < 0) {
-    slideIndex = slides.length - 1; // Gå til sidste slide, hvis vi er på første slide og går baglæns
-  }
-
-  // Skjul alle slides
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  // Vis det aktuelle slide
-  slides[slideIndex].style.display = "block";
 }
