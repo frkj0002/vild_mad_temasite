@@ -70,11 +70,15 @@ a {
     position: relative;
     background-color: var(--mørkgrøn);
     color: var(--lysgul);
-    font-size: 20px;
     text-align: center;
-    padding: 3px 45px;
+    padding: 25px 45px;
     border-radius: 10px;
     z-index: 0;
+}
+.answerBtn p {
+    z-index: 2;
+    color: var(--lysgul);
+    font-size: 25px;
 }
 .answerBtn img {
     position: absolute;
@@ -114,26 +118,22 @@ a {
     width: 90%;
 }
 
-.answerBtn p {
-    z-index: 2;
-}
-
 .answerBtn:hover, .resultBtn:hover {
     transform: scale(1.03);
     transition: .2s;
     cursor: pointer;
 }
 
-#thirdQuestion .answers a:nth-child(1) {
+#white {
     color: #fff;
 }
-#thirdQuestion .answers a:nth-child(2) {
+#yellow {
     color: #FDFF9F;
 }
-#thirdQuestion .answers a:nth-child(3) {
+#green {
     color: #A5FE7C;
 }
-#thirdQuestion .answers a:nth-child(4) {
+#purple {
     color: #D089F2;
 }
 
