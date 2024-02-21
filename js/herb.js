@@ -1,20 +1,60 @@
 const urlParams = new URLSearchParams(window.location.search);
-// console.log("urlParams", urlParams);
-var id = urlParams.get("id");
-if (id == undefined) id = 1;
+const id = urlParams.get("id");
 
-fetch("https://vuifwijcjpzjqqspgrxn.supabase.co/rest/v1/herbs?id=eq." + id, {
+fetch(`https://vuifwijcjpzjqqspgrxn.supabase.co/rest/v1/herbs?id=eq.${id}`, {
   method: "GET",
   headers: {
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1aWZ3aWpjanB6anFxc3BncnhuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MDE2NTAsImV4cCI6MjAyMzQ3NzY1MH0.d0KA4WqvNlBMrmaDdam3yl6R7rhU8NevlOTM3BBzeYM",
   },
 })
   .then((res) => res.json())
-  .then((json) => showSingleHerb(json));
+  .then(showSingleHerb);
 
-function showSingleHerb(product) {
-  console.log(product);
-  document.querySelector("h1").textContent = product.name;
+function showSingleHerb(herb) {
+  console.log(herb);
+
+  // Viser objektet inden i arrayen 
+  const singleProduct = herb[0];
+
+  // Ændrer indholdet
+  document.querySelector(".herb_name h1").textContent = singleProduct.name;
+  document.querySelector(".herb_image").src = singleProduct.image;
+  document.querySelector("#beach").src = singleProduct.beach;
+  document.querySelector("#forest").src = singleProduct.forest;
+  document.querySelector("#town").src = singleProduct.town;
+  document.querySelector("#fields").src = singleProduct.fields;
+
+
+
+ 
+
+
+  // if (herb.filter(herb => herb.seasons.includes('Summer'))) {
+  //   document.querySelector("#summer").classList.remove("hide");
+  // }
+  // if (herb.filter(herb => herb.seasons.includes('Fall'))) {
+  //   document.querySelector("#fall").classList.remove("hide");
+  // }
+
+
+  if (singleProduct.summer) {
+    document.querySelector("#summer").classList.remove("hide");
+  }
+  if (singleProduct.spring) {
+    document.querySelector("#spring").classList.remove("hide");
+  }
+  if (singleProduct.fall) {
+    document.querySelector("#fall").classList.remove("hide");
+  }
+  if (singleProduct.winter) {
+    document.querySelector("#winter").classList.remove("hide");
+  }
+
+  
+
+
+  
+
 }
 
 

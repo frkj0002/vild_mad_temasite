@@ -1,12 +1,12 @@
 // Definerer variabler
-const herbsURL = "https://vuifwijcjpzjqqspgrxn.supabase.co/rest/v1/herbs?select=id,name,category,seasons,image&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1aWZ3aWpjanB6anFxc3BncnhuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MDE2NTAsImV4cCI6MjAyMzQ3NzY1MH0.d0KA4WqvNlBMrmaDdam3yl6R7rhU8NevlOTM3BBzeYM";
+const herbsURL = "https://vuifwijcjpzjqqspgrxn.supabase.co/rest/v1/herbs?select=id,name,category,image,spring,summer,fall,winter&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ1aWZ3aWpjanB6anFxc3BncnhuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MDE2NTAsImV4cCI6MjAyMzQ3NzY1MH0.d0KA4WqvNlBMrmaDdam3yl6R7rhU8NevlOTM3BBzeYM";
 let herbTemplate;
 let allHerbs;
 let herbClone;
 
 // Fetcher dataen fra url'en
 fetch(herbsURL)
-.then((response) => response.json())
+.then((res) => res.json())
 .then(showHerbs);
 
 function showHerbs(herbs) {
@@ -26,7 +26,10 @@ function showHerb(herb) {
   // Ændre indhold
   herbClone.querySelector(".herbCategory").textContent = herb.category;
   herbClone.querySelector("h2").textContent = herb.name;
-  herbClone.querySelector(".seasons").textContent = herb.seasons;
+  herbClone.querySelector("#spring p").textContent = herb.spring;
+  herbClone.querySelector("#summer p").textContent = herb.summer;
+  herbClone.querySelector("#fall p").textContent = herb.fall;
+  herbClone.querySelector("#winter p").textContent = herb.winter;
   //   herbClone.querySelector("img").src = herb.image;
   herbClone.querySelector("img").src = herb.image;
 
