@@ -85,3 +85,8 @@ p {
 .herbText p {
     margin: 0;
 }
+.grid_seasons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
