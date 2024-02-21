@@ -45,6 +45,11 @@ button {
 }
 p {
   max-width: 70ch;
+  font-size: 18px;
+  margin: 0;
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  color: var(--mørkgrøn);
 }
 /**************************************** HEADER ****************************************/
 header {

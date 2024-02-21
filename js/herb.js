@@ -17,15 +17,36 @@ function showSingleHerb(herb) {
   const singleProduct = herb[0];
 
   // Ændrer indholdet
-  document.querySelector(".herb_name h1").textContent = singleProduct.name;
-  document.querySelector(".herb_image").src = singleProduct.image;
-  document.querySelector("#spring").src = singleProduct.spring;
-  document.querySelector("#summer").src = singleProduct.summer;
-  document.querySelector("#fall").src = singleProduct.fall;
-  document.querySelector("#winter").src = singleProduct.winter;
-  document.querySelector("#beach").src = singleProduct.beach;
-  document.querySelector("#forest").src = singleProduct.forest;
-  document.querySelector("#town").src = singleProduct.town;
-  document.querySelector("#fields").src = singleProduct.fields;
+  document.querySelector(".herbName").textContent = singleProduct.name;
+  document.querySelector(".herbInfo p").textContent = singleProduct.description;
+  document.querySelector(".herbImage").src = singleProduct.image;
+
+  // Vis kun de sæsoner, som urten har
+  if (document.querySelector("#spring").src = singleProduct.spring) {
+    document.querySelector("#spring").classList.remove("hide");
+  }
+  if (document.querySelector("#summer").src = singleProduct.summer) {
+    document.querySelector("#summer").classList.remove("hide");
+  }
+  if (document.querySelector("#fall").src = singleProduct.fall) {
+    document.querySelector("#fall").classList.remove("hide");
+  }
+  if (document.querySelector("#winter").src = singleProduct.winter) {
+    document.querySelector("#winter").classList.remove("hide");
+  }
+
+  // Vis kun de landskaber som urten har 
+  if (document.querySelector("#beach").src = singleProduct.beach) {
+    document.querySelector("#beach").classList.remove("hide");
+  }
+  if (document.querySelector("#forest").src = singleProduct.forest) {
+    document.querySelector("#forest").classList.remove("hide");
+  }
+  if (document.querySelector("#town").src = singleProduct.town) {
+    document.querySelector("#town").classList.remove("hide");
+  }
+  if (document.querySelector("#fields").src = singleProduct.fields) {
+    document.querySelector("#fields").classList.remove("hide");
+  }
 
 }

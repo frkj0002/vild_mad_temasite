@@ -30,9 +30,7 @@ function showHerb(herb) {
   herbClone.querySelector("#summer").textContent = herb.summer;
   herbClone.querySelector("#fall").textContent = herb.fall;
   herbClone.querySelector("#winter").textContent = herb.winter;
-  //   herbClone.querySelector("img").src = herb.image;
   herbClone.querySelector("img").src = herb.image;
-
 
   // Man går til den rigtige produktoversigt, når man klikker på et produkt på produktlisten.
   herbClone.querySelector("a").href = `herb.html?id=${herb.id}`
