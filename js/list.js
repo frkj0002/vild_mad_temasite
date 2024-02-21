@@ -26,13 +26,9 @@ function showHerb(herb) {
   // Ændre indhold
   herbClone.querySelector(".herbCategory").textContent = herb.category;
   herbClone.querySelector("h2").textContent = herb.name;
-  herbClone.querySelector("#spring p").textContent = herb.spring;
-  herbClone.querySelector("#summer p").textContent = herb.summer;
-  herbClone.querySelector("#fall p").textContent = herb.fall;
-  herbClone.querySelector("#winter p").textContent = herb.winter;
+  herbClone.querySelector(".seasons").textContent = herb.seasons;
   //   herbClone.querySelector("img").src = herb.image;
   herbClone.querySelector("img").src = herb.image;
-
 
   // Man går til den rigtige produktoversigt, når man klikker på et produkt på produktlisten.
   herbClone.querySelector("a").href = `herb.html?id=${herb.id}`

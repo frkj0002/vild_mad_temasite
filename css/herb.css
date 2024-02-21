@@ -1,44 +1,50 @@
+html {
+  --lysgul: #fffcf0;
+  --lysgrøn: #dbe8bd;
+  --mørkgrøn: #2b3e1e;
+  --rødBrun: #945E5CB3; 
+}
+
+main {
+  margin: 0 50px;
+}
 img {
   width: 100%;
   height: auto;
 }
-
-/* .flex_row {
-  display: flex;
-  gap: 30px;
-} */
-
-@media (min-width: 800px) {
-  .grid_herb {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .herb_name {
-    display: grid;
-    grid-column: 2;
-    grid-row: 1;
-    align-self: end;
-  }
-  .herb_image {
-    width: 60%;
-  }
-  .place_herb_image {
-    display: grid;
-    order: -1;
-    grid-row: 1 / span2;
-    place-items: center;
-  }
-  .flex_places {
-    display: flex;
-    justify-content: space-between;
-  }
-  .seasons_div {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-  }
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
 }
+h3 {
+  font-size: 25px;
+}
+
+/* Herb img */
+
+.herb_image {
+  width: 60%;
+}
+
+/* Herb info */
+
+.grid_herb {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.herbName {
+  text-align: left;
+}
+
+/* Sæsoner og landskaber */
+
+.seasonsLandscapes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .grid_seasons {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -48,36 +54,21 @@ img {
   align-items: center;
 }
 .flex_seasons img {
-  width: 30%;
-}
-.section_luft {
-  padding: 50px 20px 50px 20px;
+  width: 25%;
 }
 
-/****** SLIDESHOW ******/
-.slideshow_container {
-  position: relative;
-  max-width: 700px;
-  margin: auto;
+.landscapeImgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  width: 90%;
 }
-.slide {
+.landscapeImgs img {
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.hide {
   display: none;
-}
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  z-index: 1;
-}
-.prev {
-  left: 0;
-}
-.next {
-  right: 0;
 }

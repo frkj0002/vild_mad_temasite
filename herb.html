@@ -1,173 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Herb</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
-  <title>Herb</title>
+    <link rel="icon" href="" />
 
-  <link rel="icon" href="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montaga&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/herb.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/herb.css" />
-</head>
-
-<body>
-  <header>
-    <div class="logo_header">
-      <a href="frontpage.html">
-        <img src="imgs/illustrations/logo.svg" alt="logo">
-        <p>VILD MAD</p>
-      </a>
-    </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="questions.html">Locate herbs</a></li>
-        <li><a href="list.html">All herbs</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+  <body>
+    <header>
+      <div class="logo_header">
+        <a href="frontpage.html">
+          <img src="imgs/illustrations/logo.svg" alt="logo" />
+          <p>VILD MAD</p>
+        </a>
       </div>
-    </nav>
-  </header>
-  <main>
-    <section class="grid_herb section_luft">
-      <div class="herb_name">
-        <h1>Herbname</h1>
-      </div>
-      <div class="place_herb_image">
-        <img src="imgs/herbs/cattail.webp" alt="image of herb" class="herb_image">
-      </div>
-      <div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellendus ut expedita doloribus
-          provident,
-          hic sint, deserunt, quibusdam at odit dolorum commodi rem! Impedit excepturi aperiam magnam ipsam nulla
-          eaque?
-        </p>
-      </div>
-    </section>
-    <section class="flex_places section_luft">
-      <div class="seasons_div">
-        <h2>Seasons</h2>
-        <div class="grid_seasons">
-          <div class="flex_seasons">
-            <img src="imgs/illustrations/SPRING.svg" alt="spring">
-            <h3>Spring</h3>
-          </div>
-          <div class="flex_seasons">
-            <img src="imgs/illustrations/SUN.svg" alt="sun">
-            <h3>Summer</h3>
-          </div>
-          <div class="flex_seasons">
-            <img src="imgs/illustrations/LEAF.svg" alt="leaf">
-            <h3>Fall</h3>
-          </div>
-          <div class="flex_seasons">
-            <img src="imgs/illustrations/SNOW.svg" alt="snow">
-            <h3>Winter</h3>
+      <nav>
+        <ul class="menu">
+          <li><a href="questions.html">Locate herbs</a></li>
+          <li><a href="list.html">All herbs</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="grid_herb">
+        <img
+          class="herbImage"
+          src="imgs/herbs/cattail.webp"
+          alt="image of herb"
+        />
+        <div class="herbInfo">
+          <h1 class="herbName">Herbname</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            repellendus ut expedita doloribus provident, hic sint, deserunt,
+            quibusdam at odit dolorum commodi rem! Impedit excepturi aperiam
+            magnam ipsam nulla eaque?
+          </p>
+        </div>
+      </section>
+      <section class="seasonsLandscapes">
+        <div class="seasons_div">
+          <h2>Seasons</h2>
+          <div class="grid_seasons">
+            <div class="flex_seasons hide" id="spring">
+              <img src="imgs/illustrations/SPRING.svg" alt="spring" />
+              <h3>Spring</h3>
+            </div>
+            <div class="flex_seasons hide" id="summer">
+              <img src="imgs/illustrations/SUN.svg" alt="sun" />
+              <h3>Summer</h3>
+            </div>
+            <div class="flex_seasons hide" id="fall">
+              <img src="imgs/illustrations/LEAF.svg" alt="leaf" />
+              <h3>Fall</h3>
+            </div>
+            <div class="flex_seasons hide" id="winter">
+              <img src="imgs/illustrations/SNOW.svg" alt="snow" />
+              <h3>Winter</h3>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <h2>Where can you find it?</h2>
-        <div class="slideshow_container">
-          <div class="slide">
-            <img src="imgs/landscapes/beach.webp" alt="image of landscape">
+        <section class="landscapes">
+          <h2>Where can you find it?</h2>
+          <div class="landscapeImgs">
+            <img class="hide" id="beach" src="" alt="" />
+            <img class="hide" id="forest" src="" alt="" />
+            <img class="hide" id="town" src="" alt="" />
+            <img class="hide" id="fields" src="" alt="" />
           </div>
-          <div class="slide">
-            <img src="imgs/landscapes/a_sea.webp" alt="image of landscape">
-          </div>
-          <div class="slide">
-            <img src="imgs/landscapes/coniferous_forest.webp" alt="image of landscape">
-          </div>
-          <div class="slide">
-            <img src="imgs/landscapes/beach.webp" alt="image of landscape">
-          </div>
-          <div class="slide">
-            <img src="imgs/landscapes/beach.webp" alt="image of landscape">
-          </div>
-          <div class="slide">
-            <img src="imgs/landscapes/beach.webp" alt="image of landscape">
-          </div>
-          <div class="slide">
-            <img src="imgs/landscapes/beach.webp" alt="image of landscape">
-          </div>
-          <div class="slide">
-            <img src="imgs/landscapes/beach.webp" alt="image of landscape">
-          </div>
-          <!-- Knapper til at skifte slide -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
+      </section>
+    </main>
 
-  <footer>
-    <section class="flex_form">
-      <div>
-        <h3>Did you find any herbs?</h3>
-        <h3>Tell us about it down below.</h3>
-      </div>
-      <form action="tak.html" name="form" netlify>
-        <!-- Formular-indhold -->
-        <div class="flex_row">
-          <div class="form-felt">
-            <label for="name">Your name:</label><br />
-            <input id="name" name="name" type="text" required />
+    <footer>
+      <section class="flex_form">
+        <div>
+          <h3>Did you find any herbs?</h3>
+          <h3>Tell us about it down below.</h3>
+        </div>
+        <form action="tak.html" name="form" netlify>
+          <!-- Formular-indhold -->
+          <div class="flex_row">
+            <div class="form-felt">
+              <label for="name">Your name:</label><br />
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-felt">
+              <label for="age">Your age:</label><br />
+              <input id="age" name="age" type="text" required />
+            </div>
           </div>
           <div class="form-felt">
-            <label for="age">Your age:</label><br />
-            <input id="age" name="age" type="text" required />
+            <label for="name_herb">What's the name of the herb you found?</label
+            ><br />
+            <input id="name_herb" name="name_herb" type="text" required />
           </div>
-        </div>
-        <div class="form-felt">
-          <label for="name_herb">What's the name of the herb you found?</label><br />
-          <input id="name_herb" name="name_herb" type="text" required />
-        </div>
-        <div class="choose">
-          <label for="locations">Where did you find the herb?</label><br />
-          <select name="locations">
-            <option value="">Choose a location</option>
-            <option value="city">City</option>
-            <option value="forest">Forest</option>
-            <option value="beach">Beach</option>
-            <option value="fields">Fields</option>
-          </select>
-        </div>
-        <div class="choose">
-          <label for="locations">What are you using it for?</label><br />
-          <select name="locations">
-            <option value="">Choose an option</option>
-            <option value="cooking">For cooking</option>
-            <option value="decoration">For decoration</option>
-            <option value="herb_collection">For my herb collection</option>
-            <option value="not_sure">I'm not sure?</option>
-          </select>
-        </div>
+          <div class="choose">
+            <label for="locations">Where did you find the herb?</label><br />
+            <select name="locations">
+              <option value="">Choose a location</option>
+              <option value="city">City</option>
+              <option value="forest">Forest</option>
+              <option value="beach">Beach</option>
+              <option value="fields">Fields</option>
+            </select>
+          </div>
+          <div class="choose">
+            <label for="locations">What are you using it for?</label><br />
+            <select name="locations">
+              <option value="">Choose an option</option>
+              <option value="cooking">For cooking</option>
+              <option value="decoration">For decoration</option>
+              <option value="herb_collection">For my herb collection</option>
+              <option value="not_sure">I'm not sure?</option>
+            </select>
+          </div>
 
-        <button>Submit answers</button>
-      </form>
-    </section>
-    <section class="flex_row">
-      <div class="logo_div">
-        <img src="imgs/illustrations/logo.svg" alt="logo">
-        <p>VILD MAD</p>
-      </div>
-      <div class="social_media">
-        <img src="imgs/illustrations/instagram.svg" alt="instagram" class="instagram">
-        <img src="imgs/illustrations/facebook.svg" alt="facebook" class="facebook">
-      </div>
-    </section>
-  </footer>
+          <button>Submit answers</button>
+        </form>
+      </section>
+      <section class="flex_row">
+        <div class="logo_div">
+          <img src="imgs/illustrations/logo.svg" alt="logo" />
+          <p>VILD MAD</p>
+        </div>
+        <div class="social_media">
+          <img
+            src="imgs/illustrations/instagram.svg"
+            alt="instagram"
+            class="instagram"
+          />
+          <img
+            src="imgs/illustrations/facebook.svg"
+            alt="facebook"
+            class="facebook"
+          />
+        </div>
+      </section>
+    </footer>
 
-  <script src="js/burgermenu.js"></script>
-  <script src="js/herb.js"></script>
-</body>
-
+    <script src="js/burgermenu.js"></script>
+    <script src="js/herb.js"></script>
+  </body>
 </html>
